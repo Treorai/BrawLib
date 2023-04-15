@@ -1,4 +1,4 @@
-const api_key = vars.API_KEY;
+const api_key = github-pages.API_KEY;
 
 // Get the username input form
 const brawlForm = document.getElementById('brawlForm');
