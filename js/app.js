@@ -1,5 +1,5 @@
-import api_key from process.env.API_KEY;
-console.log(process.env);
+const api_key = vars.API_KEY;
+
 // Get the username input form
 const brawlForm = document.getElementById('brawlForm');
 const searchRepoButton = document.getElementById('searchRepoButton');
