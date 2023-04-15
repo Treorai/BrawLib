@@ -1,10 +1,9 @@
-const api_key = github-pages.API_KEY;
+//const api_key = API_KEY;
 
 // Get the username input form
 const brawlForm = document.getElementById('brawlForm');
 const searchRepoButton = document.getElementById('searchRepoButton');
-console.log('control');
-console.log(api_key)
+
 searchRepoButton.addEventListener('click', (e) => {
     e.preventDefault();
     searchRepoButton.disabled = true;
