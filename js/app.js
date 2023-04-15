@@ -1,4 +1,4 @@
-import api_key from '../config.js';
+import api_key from `${secrets.API_KEY}`;
 
 // Get the username input form
 const brawlForm = document.getElementById('brawlForm');
