@@ -1,4 +1,4 @@
-const api_key = process.env.API_KEY;
+const api_key = vars.API_KEY;
 
 // Get the username input form
 const brawlForm = document.getElementById('brawlForm');

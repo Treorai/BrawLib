@@ -13,6 +13,8 @@ Wagner Chito
 ### Créditos
 
 - Bootstrap
+- https://www.brawlhalla.com/c/uploads/2020/12/Arena_1920x1080.jpg
+- https://brawlhalla.fandom.com/wiki/Category:Icon_images
 
 ### Bastidores
 
