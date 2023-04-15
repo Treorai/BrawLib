@@ -1,9 +1,10 @@
-const api_key = vars.API_KEY;
+//const api_key = vars.API_KEY;
+const api_key = secrets.API_KEY;
 
 // Get the username input form
 const brawlForm = document.getElementById('brawlForm');
 const searchRepoButton = document.getElementById('searchRepoButton');
-
+console.log(api_key)
 searchRepoButton.addEventListener('click', (e) => {
     e.preventDefault();
     searchRepoButton.disabled = true;
@@ -12,6 +13,7 @@ searchRepoButton.addEventListener('click', (e) => {
     //start doing stuff
     let username = document.getElementById('usernameInput').value;
     if(username){
+        console.log(username);
         let url = `https://api.brawlhalla.com/player/${username}/stats&api_key=${api_key}`;
         getUserInfo(url);
     }
