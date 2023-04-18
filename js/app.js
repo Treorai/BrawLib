@@ -1,4 +1,4 @@
-//const api_key = API_KEY;
+const api_key = secrets.API_KEY;
 
 // Get the username input form
 const brawlForm = document.getElementById('brawlForm');
