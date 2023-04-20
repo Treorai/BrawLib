@@ -2,6 +2,8 @@
 
 ### Deploy
 
+TBA
+
 ### Desenvolvedor
 
 Wagner Chito
@@ -18,6 +20,7 @@ Wagner Chito
 
 ### Bastidores
 
+TBA
 
 ---
 Projeto entregue para a disciplina de [Desenvolvimento de Software para a Web](http://github.com/andreainfufsm/elc1090-2023a) em 2023a
