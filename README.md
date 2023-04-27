@@ -29,6 +29,12 @@ Wagner Chittó
 - 20/04
     - Sessão de desenvolvimento, adicionada funcionalidade de sorting, busca de userID pelo steamID e alguns incrementos no layout.
 
+- 25/04
+    - Sessão de desenvolvimento, integração com o replit.com para proteção da key.
+
+- 27/04
+    - Deus nos acuda!!
+
 - Em andamento
     - Gráficos de comparação e progresso
     - Ranking global

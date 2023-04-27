@@ -1,9 +1,9 @@
-//const api_key = secrets.API_KEY;
-import api_key from '../config.js';
 import * as sorts from './sorts.js';
 import updateGallery from './updateGallery.js';
 let globaldata;
 let sortstate = false;
+
+const repliturl = 'https://brawlibserver.treorai.repl.co';
 
 // setup elements
 const brawlForm = document.getElementById('inputSubmit');
@@ -71,7 +71,7 @@ steamSearch.addEventListener('click', (e) => {
             let bracket = '1v1';
             let region = 'all';
             let page = '1';
-            let url = `https://api.brawlhalla.com/rankings/${bracket}/${region}/${page}?name=${username}&api_key=${api_key}`;
+            let url = `https://api.brawlhalla.com/rankings/${bracket}/${region}/${page}?name=${username}`;
             getSteamPlayer(url);
         }
     //end stuffs
@@ -86,32 +86,13 @@ brawlForm.addEventListener('click', (e) => {
     //start doing stuff
         let username = document.getElementById('usernameInput').value;
         if(username){
-           let url = `https://api.brawlhalla.com/player/${username}/stats&api_key=${api_key}`;
+           let url = `https://api.brawlhalla.com/player/${username}/stats`;
             getUserInfo(url);
         }
     //end stuffs
 
     brawlForm.disabled = false;
 });
-
-async function getSteamPlayer(player){
-    const response = await fetch(player);
-    const data = await response.json();
-    if(data[0]){
-        document.getElementById('usernameInput').value = (`${data[0].brawlhalla_id}`);
-    } else {
-        document.getElementById('usernameInput').value = (``);
-    }
-}
-
-async function getUserInfo(url){
-    const response = await fetch(url);
-    const data = await response.json();
-/**/console.log(data);
-    globaldata = data;
-    updateProfile(data);
-    updateGallery(data.legends);
-}
 
 function updateProfile(data){
     document.getElementById("miuser").textContent=data.name;
@@ -124,4 +105,48 @@ async function changeSortState(){
     if(sortstate == true){
         sortstate = false;
     } else {sortstate = true}
+}
+
+function getUserInfo(url) {
+    // Send the HTTP POST request with the data as JSON in the request body
+    fetch(repliturl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'text/plain'
+        },
+        body:url
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Process the response from Replit
+        globaldata = data;
+        updateProfile(data);
+        updateGallery(data.legends);
+    })
+    .catch(error => {
+        console.error(error);
+    });
+}
+
+function getSteamPlayer(url) {
+    // Send the HTTP POST request with the data as JSON in the request body
+    fetch(repliturl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'text/plain'
+        },
+        body:url
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Process the response from Replit
+        if(data[0]){
+            document.getElementById('usernameInput').value = (`${data[0].brawlhalla_id}`);
+        } else {
+            document.getElementById('usernameInput').value = (``);
+        }
+    })
+    .catch(error => {
+        console.error(error);
+    });
 }
