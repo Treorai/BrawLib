@@ -5,6 +5,8 @@ import updateGallery from './updateGallery.js';
 let globaldata;
 let sortstate = false;
 
+const repliturl = 'https://cors-anywhere.herokuapp.com/https://brawlibserver.treorai.repl.co';
+
 // setup elements
 const brawlForm = document.getElementById('inputSubmit');
 const steamSearch = document.getElementById('searchRepoButton');
@@ -71,7 +73,7 @@ steamSearch.addEventListener('click', (e) => {
             let bracket = '1v1';
             let region = 'all';
             let page = '1';
-            let url = `https://api.brawlhalla.com/rankings/${bracket}/${region}/${page}?name=${username}&api_key=${api_key}`;
+            let url = `https://api.brawlhalla.com/rankings/${bracket}/${region}/${page}?name=${username}`;
             getSteamPlayer(url);
         }
     //end stuffs
@@ -86,8 +88,9 @@ brawlForm.addEventListener('click', (e) => {
     //start doing stuff
         let username = document.getElementById('usernameInput').value;
         if(username){
-           let url = `https://api.brawlhalla.com/player/${username}/stats&api_key=${api_key}`;
-            getUserInfo(url);
+           let url = `https://api.brawlhalla.com/player/${username}/stats`;
+            //getUserInfo(url);
+            sendDataToReplit(url);
         }
     //end stuffs
 
@@ -125,3 +128,38 @@ async function changeSortState(){
         sortstate = false;
     } else {sortstate = true}
 }
+
+
+
+
+
+function sendDataToReplit(url) {
+    
+    // Create an object with the request data
+    const data = {
+      url: url
+    };
+  
+    // Send the HTTP POST request with the data as JSON in the request body
+    fetch(repliturl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      },
+      body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Process the response from your Replit.com web service
+      console.log(data);
+      globaldata = data;
+      updateProfile(data);
+      updateGallery(data.legends);
+    })
+    .catch(error => {
+      // Handle any errors that may occur
+      console.error(error);
+    });
+    
+  }
