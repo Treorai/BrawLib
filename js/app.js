@@ -5,7 +5,9 @@ import updateGallery from './updateGallery.js';
 let globaldata;
 let sortstate = false;
 
-const repliturl = 'https://cors-anywhere.herokuapp.com/https://brawlibserver.treorai.repl.co';
+const corsbypass= 'https://cors-anywhere.herokuapp.com/';
+const serverurl = 'https://brawlibserver.treorai.repl.co';
+const repliturl = serverurl;
 
 // setup elements
 const brawlForm = document.getElementById('inputSubmit');
@@ -142,24 +144,24 @@ function sendDataToReplit(url) {
   
     // Send the HTTP POST request with the data as JSON in the request body
     fetch(repliturl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
-      },
-      body: JSON.stringify(data)
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*'
+        },
+        body:url //JSON.stringify(data)
     })
     .then(response => response.json())
     .then(data => {
-      // Process the response from your Replit.com web service
-      console.log(data);
-      globaldata = data;
-      updateProfile(data);
-      updateGallery(data.legends);
+        // Process the response from Replit
+        console.log(data);
+        globaldata = data;
+        updateProfile(data);
+        updateGallery(data.legends);
     })
     .catch(error => {
-      // Handle any errors that may occur
-      console.error(error);
+        // Handle any errors that may occur
+        console.error(error);
     });
     
-  }
+}
