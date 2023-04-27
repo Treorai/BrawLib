@@ -33,7 +33,7 @@ Wagner Chittó
     - Sessão de desenvolvimento, integração com o replit.com para proteção da key.
 
 - 27/04
-    - Deus nos acuda!!
+    - Finalização do Web Server que protege a API. Website funcional.
 
 - Em andamento
     - Gráficos de comparação e progresso
