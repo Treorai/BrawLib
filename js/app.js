@@ -1,13 +1,9 @@
-//const api_key = secrets.API_KEY;
-import api_key from '../config.js';
 import * as sorts from './sorts.js';
 import updateGallery from './updateGallery.js';
 let globaldata;
 let sortstate = false;
 
-const corsbypass= 'https://cors-anywhere.herokuapp.com/';
-const serverurl = 'https://brawlibserver.treorai.repl.co';
-const repliturl = serverurl;
+const repliturl = 'https://brawlibserver.treorai.repl.co';
 
 // setup elements
 const brawlForm = document.getElementById('inputSubmit');
@@ -91,32 +87,12 @@ brawlForm.addEventListener('click', (e) => {
         let username = document.getElementById('usernameInput').value;
         if(username){
            let url = `https://api.brawlhalla.com/player/${username}/stats`;
-            //getUserInfo(url);
-            sendDataToReplit(url);
+            getUserInfo(url);
         }
     //end stuffs
 
     brawlForm.disabled = false;
 });
-
-async function getSteamPlayer(player){
-    const response = await fetch(player);
-    const data = await response.json();
-    if(data[0]){
-        document.getElementById('usernameInput').value = (`${data[0].brawlhalla_id}`);
-    } else {
-        document.getElementById('usernameInput').value = (``);
-    }
-}
-
-async function getUserInfo(url){
-    const response = await fetch(url);
-    const data = await response.json();
-/**/console.log(data);
-    globaldata = data;
-    updateProfile(data);
-    updateGallery(data.legends);
-}
 
 function updateProfile(data){
     document.getElementById("miuser").textContent=data.name;
@@ -131,37 +107,46 @@ async function changeSortState(){
     } else {sortstate = true}
 }
 
-
-
-
-
-function sendDataToReplit(url) {
-    
-    // Create an object with the request data
-    const data = {
-      url: url
-    };
-  
+function getUserInfo(url) {
     // Send the HTTP POST request with the data as JSON in the request body
     fetch(repliturl, {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*'
+            'Content-Type': 'text/plain'
         },
-        body:url //JSON.stringify(data)
+        body:url
     })
     .then(response => response.json())
     .then(data => {
         // Process the response from Replit
-        console.log(data);
         globaldata = data;
         updateProfile(data);
         updateGallery(data.legends);
     })
     .catch(error => {
-        // Handle any errors that may occur
         console.error(error);
     });
-    
+}
+
+function getSteamPlayer(url) {
+    // Send the HTTP POST request with the data as JSON in the request body
+    fetch(repliturl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'text/plain'
+        },
+        body:url
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Process the response from Replit
+        if(data[0]){
+            document.getElementById('usernameInput').value = (`${data[0].brawlhalla_id}`);
+        } else {
+            document.getElementById('usernameInput').value = (``);
+        }
+    })
+    .catch(error => {
+        console.error(error);
+    });
 }
