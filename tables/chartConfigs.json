@@ -1,13 +1,13 @@
 {
     "type" : "pie",
 	"options" : {
-		"responsive" : "true",
+		"responsive" : true,
 		"title" : {
-			"display" : "true"
+			"display" : true
 		},
 		"labels" : {
 			"align" : "start",
-			"display" : "false",
+			"display" : false,
 			"position" : "bottom"
 		}
 	}

@@ -24,9 +24,6 @@ export default function updateGallery(chars){
                     <canvas id="KDA #${i}"></canvas>
                 </div>
                 <div class="chartBox">
-                    <canvas id="Damage Distribution #${i}"></canvas>
-                </div>
-                <div class="chartBox">
                     <canvas id="Weapon Damage Distribution #${i}"></canvas>
                 </div>
                 <div class="chartBox">
@@ -42,7 +39,6 @@ export default function updateGallery(chars){
     }
     for (let i in chars){
         chartBuilder.buildKdaChart(chars[i], i);
-        chartBuilder.buildDmgChart(chars[i], i);
         chartBuilder.buildWeaponDmgChart(chars[i], i);
         chartBuilder.buildKosChart(chars[i], i);
         chartBuilder.buildHeldWeaponChart(chars[i], i);

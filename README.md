@@ -34,10 +34,11 @@ Wagner Chittó
 
 - 27/04
     - Finalização do Web Server que protege a API. Website funcional.
+    - Início da implementação dos gráficos.
 
-- Em andamento
-    - Gráficos de comparação e progresso
-    - Ranking global
+- 28/04
+    - Concluida a implementação dos gráficos e mudanças no layout dos mesmos.
+    - Ajustes no CSS.
 
 ---
 Projeto entregue para a disciplina de [Desenvolvimento de Software para a Web](http://github.com/andreainfufsm/elc1090-2023a) em 2023a

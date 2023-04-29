@@ -1,47 +1,15 @@
 {
-    "g2" : {
-        "main" : "#e7f9ec",
-        "off" : "#684260"
-    },
-    "g3" : {
-        "w0" : "#e7f9ec",
-        "w1" : "#bba297",
-        "w2" : "#684260"
-    },
     "g4" : {
-        "kos" : "#e7f9ec",
-        "falls" : "#a0737e",
-        "suicides" : "#bba297",
-        "tks" : "#684260"
-    },
-    "g5" : {
-        "main" : "#c09080",
-        "off" : "#e6c197",
-        "unarmed" : "#eee2bc",
-        "gadget" : "#e6f1db",
-        "item" : "#cfcbb3"
-    },
-
-    "ag2" : {
-        "main" : "#684260",
-        "off" : "#c4ddd1"
-    },
-    "ag3" : {
-        "w0" : "#c1eae8",
-        "w1" : "#7c6877",
-        "w2" : "#e3d5d5"
-    },
-    "ag4" : {
         "kos" : "#e7f9ec",
         "falls" : "#687189",
         "suicides" : "#5c5968",
         "tks" : "#a0737e"
     },
-    "ag5" : {
-        "main" : "#c09080",
-        "off" : "#e6c197",
-        "unarmed" : "#eee2bc",
-        "gadget" : "#e6f1db",
+    "g5" : {
+        "main" : "#684260",
+        "off" : "#a0737e",
+        "unarmed" : "#c09080",
+        "gadget" : "#e6c197",
         "item" : "#cfcbb3"
     }
 }

@@ -1,6 +1,234 @@
 {
-    "ember": {
-        "main" : "Bow",
-        "off" : "katars"
+    "ada" : {
+        "main" : "",
+        "off" : ""
+    },
+    "arcadia" : {
+        "main" : "",
+        "off" : ""
+    },
+    "artemis" : {
+        "main" : "",
+        "off" : ""
+    },
+    "asuri" : {
+        "main" : "",
+        "off" : ""
+    },
+    "azoth" : {
+        "main" : "",
+        "off" : ""
+    },
+    "barraza" : {
+        "main" : "",
+        "off" : ""
+    },
+    "bodvar" : {
+        "main" : "",
+        "off" : ""
+    },
+    "brynn" : {
+        "main" : "",
+        "off" : ""
+    },
+    "caspian" : {
+        "main" : "",
+        "off" : ""
+    },
+    "cassidy" : {
+        "main" : "",
+        "off" : ""
+    },
+    "cross" : {
+        "main" : "",
+        "off" : ""
+    },
+    "diana" : {
+        "main" : "",
+        "off" : ""
+    },
+    "dusk" : {
+        "main" : "",
+        "off" : ""
+    },
+    "ember" : {
+        "main" : "",
+        "off" : ""
+    },
+    "ezio" : {
+        "main" : "",
+        "off" : ""
+    },
+    "fait" : {
+        "main" : "",
+        "off" : ""
+    },
+    "gnash" : {
+        "main" : "",
+        "off" : ""
+    },
+    "hattori" : {
+        "main" : "",
+        "off" : ""
+    },
+    "isaiah" : {
+        "main" : "",
+        "off" : ""
+    },
+    "jaeyun" : {
+        "main" : "",
+        "off" : ""
+    },
+    "jhala" : {
+        "main" : "",
+        "off" : ""
+    },
+    "jiro" : {
+        "main" : "",
+        "off" : ""
+    },
+    "kaya" : {
+        "main" : "",
+        "off" : ""
+    },
+    "koji" : {
+        "main" : "",
+        "off" : ""
+    },
+    "kor" : {
+        "main" : "",
+        "off" : ""
+    },
+    "lin fei" : {
+        "main" : "",
+        "off" : ""
+    },
+    "lucien" : {
+        "main" : "",
+        "off" : ""
+    },
+    "magyar" : {
+        "main" : "",
+        "off" : ""
+    },
+    "mako" : {
+        "main" : "",
+        "off" : ""
+    },
+    "mirage" : {
+        "main" : "",
+        "off" : ""
+    },
+    "mordex" : {
+        "main" : "",
+        "off" : ""
+    },
+    "munin" : {
+        "main" : "",
+        "off" : ""
+    },
+    "queen nai" : {
+        "main" : "",
+        "off" : ""
+    },
+    "nix" : {
+        "main" : "",
+        "off" : ""
+    },
+    "onyx" : {
+        "main" : "",
+        "off" : ""
+    },
+    "orion" : {
+        "main" : "",
+        "off" : ""
+    },
+    "petra" : {
+        "main" : "",
+        "off" : ""
+    },
+    "ragnir" : {
+        "main" : "",
+        "off" : ""
+    },
+    "rayman" : {
+        "main" : "",
+        "off" : ""
+    },
+    "reno" : {
+        "main" : "",
+        "off" : ""
+    },
+    "sir roland" : {
+        "main" : "",
+        "off" : ""
+    },
+    "scarlet" : {
+        "main" : "",
+        "off" : ""
+    },
+    "sentinel" : {
+        "main" : "",
+        "off" : ""
+    },
+    "sidra" : {
+        "main" : "",
+        "off" : ""
+    },
+    "teros" : {
+        "main" : "",
+        "off" : ""
+    },
+    "tezca" : {
+        "main" : "",
+        "off" : ""
+    },
+    "thatch" : {
+        "main" : "",
+        "off" : ""
+    },
+    "thea" : {
+        "main" : "",
+        "off" : ""
+    },
+    "thor" : {
+        "main" : "",
+        "off" : ""
+    },
+    "ulgrim" : {
+        "main" : "",
+        "off" : ""
+    },
+    "val" : {
+        "main" : "",
+        "off" : ""
+    },
+    "vector" : {
+        "main" : "",
+        "off" : ""
+    },
+    "volkov" : {
+        "main" : "",
+        "off" : ""
+    },
+    "lord vraxx" : {
+        "main" : "",
+        "off" : ""
+    },
+    "wu shang" : {
+        "main" : "",
+        "off" : ""
+    },
+    "xull" : {
+        "main" : "",
+        "off" : ""
+    },
+    "yumiko" : {
+        "main" : "",
+        "off" : ""
+    },
+    "zariel" : {
+        "main" : "",
+        "off" : ""
     }
 }
