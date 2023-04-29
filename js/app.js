@@ -1,5 +1,6 @@
 import * as sorts from './sorts.js';
 import updateGallery from './updateGallery.js';
+import * as charts from './charts.js';
 let globaldata;
 let sortstate = false;
 

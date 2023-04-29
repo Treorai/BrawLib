@@ -1,0 +1,14 @@
+{
+    "type" : "pie",
+	"options" : {
+		"responsive" : "true",
+		"title" : {
+			"display" : "true"
+		},
+		"labels" : {
+			"align" : "start",
+			"display" : "false",
+			"position" : "bottom"
+		}
+	}
+}

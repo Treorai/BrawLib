@@ -1,0 +1,6 @@
+{
+    "ember": {
+        "main" : "Bow",
+        "off" : "katars"
+    }
+}
