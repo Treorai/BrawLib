@@ -1,91 +1,91 @@
 {
     "ada" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Blasters",
+        "off" : "Spear"
     },
     "arcadia" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Spear",
+        "off" : "Greatsword"
     },
     "artemis" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Lance",
+        "off" : "Scythe"
     },
     "asuri" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Katars",
+        "off" : "Sword"
     },
     "azoth" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Bow",
+        "off" : "Axe"
     },
     "barraza" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Axe",
+        "off" : "Bow"
     },
     "bodvar" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Hammer",
+        "off" : "Sword"
     },
     "brynn" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Axe",
+        "off" : "Spear"
     },
     "caspian" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Gauntlets",
+        "off" : "Katars"
     },
     "cassidy" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Blasters",
+        "off" : "Hammer"
     },
     "cross" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Blasters",
+        "off" : "Gauntlets"
     },
     "diana" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Bow",
+        "off" : "Blasters"
     },
     "dusk" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Spear",
+        "off" : "Orb"
     },
     "ember" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Bow",
+        "off" : "Katars"
     },
     "ezio" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Sword",
+        "off" : "Orb"
     },
     "fait" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Scythe",
+        "off" : "Orb"
     },
     "gnash" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Hammer",
+        "off" : "Spear"
     },
     "hattori" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Sword",
+        "off" : "Spear"
     },
     "isaiah" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Cannon",
+        "off" : "Blasters"
     },
     "jaeyun" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Sword",
+        "off" : "Greatsword"
     },
     "jhala" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Axe",
+        "off" : "Sword"
     },
     "jiro" : {
-        "main" : "",
-        "off" : ""
+        "main" : "Sword",
+        "off" : "Scythe"
     },
     "kaya" : {
         "main" : "",
