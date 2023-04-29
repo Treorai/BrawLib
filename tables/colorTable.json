@@ -1,15 +1,15 @@
 {
     "g4" : {
-        "kos" : "#e7f9ec",
-        "falls" : "#687189",
-        "suicides" : "#5c5968",
-        "tks" : "#a0737e"
+        "kos" : "#5895a3",
+        "falls" : "#f0b1c9",
+        "suicides" : "#f2dfbb",
+        "tks" : "#f2d680"
     },
     "g5" : {
-        "main" : "#684260",
-        "off" : "#a0737e",
-        "unarmed" : "#c09080",
-        "gadget" : "#e6c197",
-        "item" : "#cfcbb3"
+        "main" : "#bf808c",
+        "off" : "#d99b84",
+        "unarmed" : "#f2d680",
+        "gadget" : "#f2dfbb",
+        "item" : "#9beaf2"
     }
 }
