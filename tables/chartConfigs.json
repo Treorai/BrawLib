@@ -1,5 +1,16 @@
 {
-    "type" : "pie",
+    "type" : {
+		"kda" : "doughnut",
+		"dmg" : "polarArea",
+		"ko" : "polarArea",
+		"holdtime" : "radar" 
+	},
+	"title":{
+		"kda" : "KDA",
+		"dmg" : "Damage Distribuition",
+		"ko" : "K.O. Distribuition",
+		"holdtime" : "Weapon Usage" 
+	},
 	"options" : {
 		"responsive" : true,
 		"title" : {

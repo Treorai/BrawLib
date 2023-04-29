@@ -3,14 +3,18 @@ import weaponTable from "../tables/weaponTable.json" assert {type: "json"};
 import chConfig from "../tables/chartConfigs.json" assert {type: "json"};
 
 export function buildKdaChart(legendData, i){
-    
+  let kdacolor = colorTable.g4.falls;
+    if(legendData.falls+legendData.suicides > legendData.kos){
+      kdacolor = colorTable.g5.main;
+    }
+
     new Chart("KDA #"+i, {
-        type: chConfig.type,
+        type: chConfig.type.kda,
         data: {
           labels: ['Kills', 'Deaths', 'Team Kills', 'Suicides'],
           datasets: [{
             data: [legendData.kos, legendData.falls, legendData.teamkos, legendData.suicides],
-            backgroundColor: [colorTable.g4.kos, colorTable.g4.falls, colorTable.g4.tks, colorTable.g4.suicides]
+            backgroundColor: [colorTable.g4.kos, kdacolor, colorTable.g4.tks, colorTable.g4.suicides]
           }]
         },
         options: {
@@ -22,10 +26,12 @@ export function buildKdaChart(legendData, i){
             },
             title: {
               display: chConfig.options.title.display,
-              text: "KDA"
+              text: chConfig.title.kda
             }
           },
-          responsive: chConfig.options.responsive
+          responsive: chConfig.options.responsive,
+          cutout: '4%',
+          radius: '95%'
         }
       });
 
@@ -34,7 +40,7 @@ export function buildKdaChart(legendData, i){
 export function buildWeaponDmgChart(legendData, i){
     
     new Chart("Weapon Damage Distribution #"+i, {
-        type: chConfig.type,
+        type: chConfig.type.dmg,
         data: {
           labels: [weaponTable[legendData.legend_name_key].main, weaponTable[legendData.legend_name_key].off, 'Unarmed', 'Gadgets', 'Thrown Item'],
           datasets: [{
@@ -43,6 +49,13 @@ export function buildWeaponDmgChart(legendData, i){
           }]
         },
         options: {
+          scales: {
+            r: {
+              ticks: {
+                display: false
+              }
+            }
+          },
           plugins: {
             legend: {
               align: chConfig.options.labels.align,
@@ -51,7 +64,7 @@ export function buildWeaponDmgChart(legendData, i){
             },
             title: {
               display: chConfig.options.title.display,
-              text: "Weapon Damage"
+              text: chConfig.title.dmg
             }
           },
           responsive: chConfig.options.responsive
@@ -63,7 +76,7 @@ export function buildWeaponDmgChart(legendData, i){
 export function buildKosChart(legendData, i){
     
     new Chart("Weapon KO Distribution #"+i, {
-        type: chConfig.type,
+        type: chConfig.type.ko,
         data: {
           labels: [weaponTable[legendData.legend_name_key].main, weaponTable[legendData.legend_name_key].off, 'Unarmed', 'Gadgets', 'Thrown Item'],
           datasets: [{
@@ -72,10 +85,17 @@ export function buildKosChart(legendData, i){
           }]
         },
         options: {
+          scales: {
+            r: {
+              ticks: {
+                display: false
+              }
+            }
+          },
           plugins: {
             title: {
               display: chConfig.options.title.display,
-              text: "Weapon KO"
+              text: chConfig.title.ko
             },
             legend: {
               display: chConfig.options.labels.display,
@@ -92,15 +112,24 @@ export function buildKosChart(legendData, i){
 export function buildHeldWeaponChart(legendData, i){
   
   new Chart("Weapon Holdtime Distribution #"+i, {
-    type: chConfig.type,
+    type: chConfig.type.holdtime,
     data: {
       labels: [weaponTable[legendData.legend_name_key].main, weaponTable[legendData.legend_name_key].off, 'Unarmed'],
       datasets: [{
+        label: "Time holding weapons",
         data: [legendData.timeheldweaponone, legendData.timeheldweapontwo, legendData.matchtime-legendData.timeheldweaponone - legendData.timeheldweapontwo],
-        backgroundColor: [colorTable.g5.main, colorTable.g5.off, colorTable.g5.unarmed]
+        //backgroundColor: [colorTable.g5.main, colorTable.g5.off, colorTable.g5.unarmed]
+        backgroundColor: 'rgba(88, 149, 163, 0.2)',
+        borderColor: 'rgb(88, 149, 163)',
+        order: 2
       }]
     },
     options: {
+      elements: {
+        point: {
+          pointRadius: '0'
+        }
+      },
       plugins: {
         legend: {
           align: chConfig.options.labels.align,
@@ -109,7 +138,14 @@ export function buildHeldWeaponChart(legendData, i){
         },
         title: {
           display: chConfig.options.title.display,
-          text: "Weapon Holdtime"
+          text: chConfig.title.holdtime
+        }
+      },
+      scales: {
+        r: {
+          ticks: {
+            display: false
+          }
         }
       },
       responsive: chConfig.options.responsive
