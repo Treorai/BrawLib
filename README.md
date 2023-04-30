@@ -44,6 +44,7 @@ Wagner Chittó
     - Mudança no layout dos gráficos, bem como de cores e de tipos.
     - Ajuste no corpo do site.
     - Ajuste na pesquisa.
+    - Banner image.
 
 ---
 Projeto entregue para a disciplina de [Desenvolvimento de Software para a Web](http://github.com/andreainfufsm/elc1090-2023a) em 2023a
