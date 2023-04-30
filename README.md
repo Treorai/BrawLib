@@ -30,15 +30,20 @@ Wagner Chittó
     - Sessão de desenvolvimento, adicionada funcionalidade de sorting, busca de userID pelo steamID e alguns incrementos no layout.
 
 - 25/04
-    - Sessão de desenvolvimento, integração com o replit.com para proteção da key.
+    - Sessão de desenvolvimento, integração com o replit.com para proteção da api_key.
 
 - 27/04
     - Finalização do Web Server que protege a API. Website funcional.
     - Início da implementação dos gráficos.
 
 - 28/04
-    - Concluida a implementação dos gráficos e mudanças no layout dos mesmos.
+    - Concluida a implementação dos gráficos.
     - Ajustes no CSS.
+
+- 29/04
+    - Mudança no layout dos gráficos, bem como de cores e de tipos.
+    - Ajuste no corpo do site.
+    - Ajuste na pesquisa.
 
 ---
 Projeto entregue para a disciplina de [Desenvolvimento de Software para a Web](http://github.com/andreainfufsm/elc1090-2023a) em 2023a
