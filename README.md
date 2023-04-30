@@ -15,8 +15,9 @@ Wagner Chittó
 ### Créditos
 
 - Bootstrap
-- https://www.brawlhalla.com/c/uploads/2020/12/Arena_1920x1080.jpg
+- [Brawlhalla.com](https://www.brawlhalla.com/c/uploads/2020/12/Arena_1920x1080.jpg)
 - https://brawlhalla.fandom.com/wiki/Category:Icon_images
+- [Ubisoft Store](https://store.ubisoft.com/on/demandware.static/-/Sites-masterCatalog/default/dw9cdd06ce/images/pdpbanner/6077f2aa5cdf9a268c10d3dd_bg.jpg)
 
 ### Bastidores
 
